@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { simplify, parse } from "mathjs"; // for algebraic equivalence
 import "./flashcards.css";
 
 export default function App() {
@@ -36,12 +35,12 @@ export default function App() {
   const handleAnswer = (value) =>
     setAnswers({ ...answers, [currentIndex]: value });
 
-  // --- Check equivalence using mathjs ---
+  // --- Check numerical equivalence ---
   const checkAnswer = (userInput, correct) => {
     try {
-      const userExpr = simplify(parse(userInput));
-      const correctExpr = simplify(parse(correct));
-      return simplify(userExpr.subtract(correctExpr)).equals(0);
+      const userNum = parseInt(userInput.trim(), 10);
+      const correctNum = parseInt(correct.trim(), 10);
+      return userNum === correctNum;
     } catch {
       return false; // invalid input
     }
@@ -141,7 +140,7 @@ export default function App() {
       <input
         type="text"
         className="input-answer"
-        placeholder="Your expanded answer"
+        placeholder="Your answer"
         value={answers[currentIndex] || ""}
         onChange={(e) => handleAnswer(e.target.value)}
       />
