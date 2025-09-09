@@ -8,7 +8,7 @@ and a **React frontend** to display them interactively with animations.
 
 ------------------------------------------------------------------------
 
-## ðŸ“Œ Features
+## Features
 
 -   Covers **four key cases** of integer operations:
     1.  **Adding like signs**\
@@ -32,7 +32,7 @@ and a **React frontend** to display them interactively with animations.
 
 ------------------------------------------------------------------------
 
-## ðŸ› ï¸ Tech Stack
+## Tech Stack
 
 -   **Backend (Flashcard Generator):** Python 3, Sympy\
 -   **Frontend (UI):** React + TailwindCSS + Framer Motion\
@@ -40,7 +40,7 @@ and a **React frontend** to display them interactively with animations.
 
 ------------------------------------------------------------------------
 
-## ðŸš€ Getting Started
+## Getting Started
 
 ### 1. Clone the repository
 
@@ -75,7 +75,7 @@ Open <http://localhost:3000> to view the app.
 
 ------------------------------------------------------------------------
 
-## ðŸ“‚ Project Structure
+## Project Structure
 
     .
     â”œâ”€â”€ generate_flashcards.py   # Python script for generating flashcards
@@ -90,7 +90,7 @@ Open <http://localhost:3000> to view the app.
 
 ------------------------------------------------------------------------
 
-## âœ… Example Flashcard JSON
+## Example Flashcard JSON
 
 ``` json
 {
@@ -101,7 +101,7 @@ Open <http://localhost:3000> to view the app.
 
 ------------------------------------------------------------------------
 
-## ðŸŽ¯ Future Improvements
+## Future Improvements
 
 -   Add difficulty levels (easy, medium, hard)\
 -   Track progress across sessions\
@@ -109,6 +109,6 @@ Open <http://localhost:3000> to view the app.
 
 ------------------------------------------------------------------------
 
-## ðŸ“„ License
+## License
 
 This project is licensed under the MIT License.
